@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games and Sports</title>
+    <link rel="icon" type="image/x-icon" href="images/acc-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!--This is Header-->
+    <header>
+
+       <!--This is nav section-->
+       <nav class="navbar container navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Images/acc-removebg-preview.png" alt="Md Imtiaz Sharif" width="90"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-medium">
+              <li class="nav-item ps-4">
+                <a class="nav-link active text-warning" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link" href="#">Player</a>
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link" href="#">Skills</a>                    
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link" href="#">About</a>                    
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link" href="#">Blog</a>                    
+              </li>              
+            </ul>            
+            <a href="#">
+              <button type="button" class="btn btn-lg btn-success">Login</button>
+            </a>
+          </div>
+        </div>
+      </nav>              
+
+    </header>
+
+
+    <!--This is main-->
+
+    <main>   
+
+        <div class="container me-auto mb-5" style="width: 50%;">                               
+          <form class="d-flex" role="search">
+            <input id="searchContainer" class="form-control me-2" type="search" placeholder="Search player here" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>              
+        </div>
+        <hr class="container"> 
+
+        <section class="container me-auto mb-5">
+          
+          <div class="row mt-5">
+            <div id="playersContainer" class="all-player-container d-flex justify-content-around col-lg-10 col-md-6 col-sm-6">              
+
+            </div>           
+            <div id="groupContainer" class="group-container text-center rounded p-2 border col-lg-2 col-md-6 col-sm-6">
+              <h4>Player count: <span id="counts">0</span></h4>
+              <hr>
+              <div id="groupmainContainer" class="cart-main-container">
+                
+              </div>                          
+    
+            </div>                      
+          </div>            
+        </section>
+
+
+        <!--This is Modal Section-->
+
+
+        <section>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Player details</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modalsBody" class="modal-body">                  
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                     
+    </main>   
+
+    <!--This is footer section-->
+    <footer class="container text-center mt-5">
+      <p class="fs-5">Copyright &copy; | Games and Sports Site</p>
+      <p class="fs-5">Dhaka, Bangladesh</p>      
+    </footer>
+    
+
+
+    <div>
+        <script src="player_name.js"></script>
+        <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js" ></script>
+        <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    </div>
+</bodylass=>
+</html>
